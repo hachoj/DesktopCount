@@ -1,10 +1,15 @@
-#!/bin/bash
-set -e
+#!/usr/bin/env bash
+set -euo pipefail
 
 APP_NAME="DesktopCount"
-PROJECT_DIR="$(dirname "$0")/DesktopCount"
+PROJECT_DIR="$(cd "$(dirname "$0")" && pwd)/DesktopCount"
 BUILD_DIR="$PROJECT_DIR/build"
-DEST_DIR="$HOME/Applications"
+DEST_DIR="${DEST_DIR:-$HOME/Applications}"
+
+if ! command -v xcodebuild >/dev/null; then
+  echo "xcodebuild not found. Please install Xcode command line tools." >&2
+  exit 1
+fi
 
 # Build the app
 xcodebuild -project "$PROJECT_DIR/$APP_NAME.xcodeproj" -scheme "$APP_NAME" -configuration Release -derivedDataPath "$BUILD_DIR" build
