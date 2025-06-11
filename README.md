@@ -1,6 +1,6 @@
 # DesktopCount
 
-DesktopCount is a minimal menu bar application that displays the number of the current macOS desktop (Space). The icon updates automatically whenever you switch spaces.
+DesktopCount is a tiny menu bar application for macOS that shows the index of the currently active desktop (Space).  It relies on the [yabai](https://github.com/koekeishiya/yabai) window manager to determine the focused space and updates automatically whenever you switch.
 
 ## Installation
 
@@ -10,10 +10,10 @@ cd DesktopCount
 ./install.sh
 ```
 
-The script builds the app with `swiftc` (requires the Xcode command line tools) and installs it to `/Applications/DesktopCount.app`.
+The script builds the Xcode project using `xcodebuild` and installs `DesktopCount.app` into `~/Applications` by default.  Set the `DEST_DIR` environment variable if you wish to install elsewhere.  Xcode command line tools must be installed.
 
 ## Usage
 
-After installation the app launches automatically. The menu bar will show a number representing your active desktop. Switch spaces as usual and the number updates immediately.
+After installation launch **DesktopCount.app** from Finder or Spotlight.  The menu bar icon displays the number of your active desktop and updates whenever you change spaces.
 
-No additional UI is provided – simply quit the app from the menu bar if needed.
+No additional interface is provided—quit the app from its menu bar icon if needed.
