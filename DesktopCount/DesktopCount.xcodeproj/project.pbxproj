@@ -1,0 +1,134 @@
+// !$*UTF8*$!
+{
+  archiveVersion = 1;
+  classes = {};
+  objectVersion = 55;
+  objects = {
+
+/* Begin PBXBuildFile section */
+    1A2B3C4D5E6F7A8B9C0D1E2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7A8B9C0D1E30 /* AppDelegate.swift */; };
+    1A2B3C4D5E6F7A8B9C0D1E31 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B3C4D5E6F7A8B9C0D1E32 /* main.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+    1A2B3C4D5E6F7A8B9C0D1E30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+    1A2B3C4D5E6F7A8B9C0D1E32 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+    1A2B3C4D5E6F7A8B9C0D1E33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+    1A2B3C4D5E6F7A8B9C0D1E34 = {
+      isa = PBXGroup;
+      children = (
+        1A2B3C4D5E6F7A8B9C0D1E30 /* AppDelegate.swift */,
+        1A2B3C4D5E6F7A8B9C0D1E32 /* main.swift */,
+        1A2B3C4D5E6F7A8B9C0D1E33 /* Info.plist */,
+      );
+      path = "";
+      sourceTree = "<group>";
+    };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+    1A2B3C4D5E6F7A8B9C0D1E35 /* DesktopCount */ = {
+      isa = PBXNativeTarget;
+      buildConfigurationList = 1A2B3C4D5E6F7A8B9C0D1E36 /* Build configuration list */;
+      buildPhases = (
+        1A2B3C4D5E6F7A8B9C0D1E37 /* Sources */,
+      );
+      buildRules = (
+      );
+      dependencies = (
+      );
+      name = "DesktopCount";
+      productName = "DesktopCount";
+      productType = "com.apple.product-type.application";
+      productReference = 1A2B3C4D5E6F7A8B9C0D1E38 /* DesktopCount.app */;
+    };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+    1A2B3C4D5E6F7A8B9C0D1E39 = {
+      isa = PBXProject;
+      attributes = {
+        LastUpgradeCheck = 1300;
+        ORGANIZATIONNAME = "";
+      };
+      buildConfigurationList = 1A2B3C4D5E6F7A8B9C0D1E3A /* Build configuration list */;
+      compatibilityVersion = "Xcode 13.0";
+      developmentRegion = en;
+      hasScannedForEncodings = 0;
+      knownRegions = (
+        en,
+      );
+      mainGroup = 1A2B3C4D5E6F7A8B9C0D1E34;
+      productRefGroup = 1A2B3C4D5E6F7A8B9C0D1E34;
+      projectDirPath = "";
+      projectRoot = "";
+      targets = (
+        1A2B3C4D5E6F7A8B9C0D1E35 /* DesktopCount */,
+      );
+    };
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+    1A2B3C4D5E6F7A8B9C0D1E37 /* Sources */ = {
+      isa = PBXSourcesBuildPhase;
+      buildActionMask = 2147483647;
+      files = (
+        1A2B3C4D5E6F7A8B9C0D1E2F /* AppDelegate.swift in Sources */,
+        1A2B3C4D5E6F7A8B9C0D1E31 /* main.swift in Sources */,
+      );
+      runOnlyForDeploymentPostprocessing = 0;
+    };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+    1A2B3C4D5E6F7A8B9C0D1E3B /* Debug */ = {
+      isa = XCBuildConfiguration;
+      buildSettings = {
+        PRODUCT_NAME = "$(TARGET_NAME)";
+        INFOPLIST_FILE = Info.plist;
+        SWIFT_VERSION = 5.0;
+        MACOSX_DEPLOYMENT_TARGET = 12.0;
+        OTHER_LDFLAGS = "-framework ApplicationServices";
+      };
+      name = Debug;
+    };
+    1A2B3C4D5E6F7A8B9C0D1E3C /* Release */ = {
+      isa = XCBuildConfiguration;
+      buildSettings = {
+        PRODUCT_NAME = "$(TARGET_NAME)";
+        INFOPLIST_FILE = Info.plist;
+        SWIFT_VERSION = 5.0;
+        MACOSX_DEPLOYMENT_TARGET = 12.0;
+        OTHER_LDFLAGS = "-framework ApplicationServices";
+      };
+      name = Release;
+    };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+    1A2B3C4D5E6F7A8B9C0D1E36 /* Build configuration list */ = {
+      isa = XCConfigurationList;
+      buildConfigurations = (
+        1A2B3C4D5E6F7A8B9C0D1E3B /* Debug */,
+        1A2B3C4D5E6F7A8B9C0D1E3C /* Release */,
+      );
+      defaultConfigurationIsVisible = 0;
+      defaultConfigurationName = Release;
+    };
+    1A2B3C4D5E6F7A8B9C0D1E3A /* Build configuration list */ = {
+      isa = XCConfigurationList;
+      buildConfigurations = (
+        1A2B3C4D5E6F7A8B9C0D1E3B /* Debug */,
+        1A2B3C4D5E6F7A8B9C0D1E3C /* Release */,
+      );
+      defaultConfigurationIsVisible = 0;
+      defaultConfigurationName = Release;
+    };
+/* End XCConfigurationList section */
+
+  };
+  rootObject = 1A2B3C4D5E6F7A8B9C0D1E39 /* Project object */;
+} 
